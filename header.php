@@ -4,21 +4,22 @@
 		<head>
 			<meta charset="utf-8">
 			<meta http-equiv="x-ua-compatible" content="ie=edge">
-			<title>Titulo de la página: entre 55 caracteres</title>
+			<title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
 			<meta name="title" content="Titulo de la página: entre 55 caracteres">
 			<meta name="description" content="La descripción: entre 155 caracteres">
 			<meta name="keywords" content="Keywords: entre 5 palabras o frases clave">
-			<meta name="author" content="autor de la pagina">
+			<meta name="author" content="<?php bloginfo('name'); ?>">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 			<meta name="language" content="es">
 			<meta name="robots" content="index,follow">
-			<meta property="og:title" content="Titulo de la página: entre 55 caracteres | web-url.com">
+			<meta property="og:title" content="<?php bloginfo('name'); ?> | <?php print get_home_url(); ?>">
+			<meta property="og:url" content="<?php print get_home_url(); ?>">
 			<meta property="og:description" content="La descripción: entre 155 caracteres">
 			<meta property="og:image" content="<?php print IMG; ?>/img/logo.jpg">
-			<meta name="DC.Title" content="Titulo de la página: entre 55 caracteres">
-			<meta name="DC.Creator" content="undefined">
+			<meta name="DC.Title" content="<?php bloginfo('name'); ?>">
+			<meta name="DC.Creator" content="<?php bloginfo('name'); ?>">
 			<meta name="DC.Description" content="La descripción: entre 155 caracteres">
-			<meta name="DC.Publisher" content="undefined">
+			<meta name="DC.Publisher" content="<?php bloginfo('name'); ?>">
 			<meta name="DC.Contributor" content="developer">
 			<meta name="DC.Language" content="es">
 			<link href='http://fonts.googleapis.com/css?family=Roboto:400,900,400italic' rel='stylesheet' type='text/css'>
